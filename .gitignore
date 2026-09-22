@@ -1,0 +1,14 @@
+# backups e sobras de edição
+*.bak
+*.orig
+*.rej
+
+# empacotamento da extensão
+*.zip
+*.crx
+*.pem
+
+# lixo de sistema
+Thumbs.db
+desktop.ini
+.DS_Store

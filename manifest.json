@@ -1,0 +1,26 @@
+{
+    "update_url": "https://clients2.google.com/service/update2/crx",
+    "name": "Não Seguidores",
+    "description": "Mostra quem não está te seguindo de volta no Instagram.",
+    "version": "1.15.0",
+    "manifest_version": 3,
+    "permissions": [
+        "scripting",
+        "tabs",
+        "storage"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "host_permissions": [
+        "https://*.instagram.com/*"
+    ],
+    "action": {
+        "default_title": "Não Seguidores"
+    },
+    "icons": {
+        "16": "icon16.png",
+        "48": "icon48.png",
+        "128": "icon128.png"
+    }
+}

@@ -1,0 +1,72 @@
+.ns-reels-bar{
+    position:fixed;
+    left:50%;
+    top:12px;
+    transform:translateX(-50%);
+    z-index:2147483647;
+    display:flex;
+    align-items:center;
+    gap:9px;
+    padding:5px 8px;
+    border-radius:9px;
+    background-color:rgba(20,20,20,.94);
+    box-shadow:0 3px 14px rgba(0,0,0,.4);
+    color:#fff;
+    font:11px/1.25 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+    max-width:calc(100vw - 24px);
+    flex-wrap:wrap;
+    justify-content:center;
+}
+.ns-reels-bar.ns-locked{opacity:.55;pointer-events:none}
+
+.ns-reels-bar .ns-who{display:flex;flex-direction:column;line-height:1.25;min-width:0}
+.ns-reels-bar .ns-user{font-weight:600;font-size:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ns-reels-bar .ns-pos{color:#aaa;font-size:10px}
+
+.ns-reels-bar .ns-keys{display:flex;gap:5px;flex-wrap:wrap;align-items:center}
+.ns-reels-bar .ns-key{
+    appearance:none;
+    border:1px solid rgba(255,255,255,.18);
+    background-color:rgba(255,255,255,.08);
+    color:#fff;
+    padding:4px 8px;
+    border-radius:6px;
+    font:inherit;
+    cursor:pointer;
+    white-space:nowrap;
+    transition:background-color .15s ease;
+}
+.ns-reels-bar .ns-key:hover{background-color:rgba(255,255,255,.18)}
+.ns-reels-bar .ns-key b{
+    display:inline-block;
+    min-width:13px;
+    margin-right:4px;
+    padding:0 3px;
+    border-radius:3px;
+    background-color:rgba(255,255,255,.16);
+    font-weight:600;
+}
+.ns-reels-bar .ns-key.ns-danger{border-color:rgba(239,68,68,.5)}
+.ns-reels-bar .ns-key.ns-danger:hover{background-color:rgba(239,68,68,.3)}
+
+.ns-reels-bar .ns-sound{
+    appearance:none;
+    border:1px solid rgba(255,255,255,.18);
+    background-color:rgba(255,255,255,.08);
+    color:#fff;
+    width:24px;height:24px;
+    border-radius:6px;
+    font-size:12px;line-height:1;
+    cursor:pointer;
+    flex-shrink:0;
+    transition:background-color .15s ease;
+}
+.ns-reels-bar .ns-sound:hover{background-color:rgba(255,255,255,.18)}
+.ns-reels-bar .ns-sound.ns-off{opacity:.55}
+
+.ns-reels-bar .ns-note{color:#bbb;font-size:10px;min-width:0}
+.ns-reels-bar .ns-note:empty{display:none}
+
+@media (max-width:640px){
+    .ns-reels-bar{left:8px;right:8px;top:8px;transform:none;max-width:none}
+}
